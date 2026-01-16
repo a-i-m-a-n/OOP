@@ -1,9 +1,0 @@
-# CUICONNECT USERS DB
-STUDENT|FA20-BCS-001|Ali Khan|ali.student@demo.com|pass123|true|Computer Science|5|java,python,database
-STUDENT|FA20-BCS-002|Sara Ahmed|sara.student@demo.com|pass123|true|Computer Science|5|web development,javascript,react
-STUDENT|FA20-BBA-001|Ahmed Raza|ahmed.student@demo.com|pass123|true|Business|4|marketing,management
-SOCIETY_ADMIN|SA001|Dr. Farhan|farhan.admin@demo.com|admin123|true
-DEPARTMENT_REP|DR001|Dr. Sana|sana.rep@demo.com|dept123|true|Computer Science
-SYSTEM_ADMIN|SYS001|Admin|admin.sys@demo.com|sysadmin|true
-STUDENT|11|Aiman|aiman@gmail.com|1234|true|SE|4|java
-
