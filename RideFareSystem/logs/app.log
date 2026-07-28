@@ -1,0 +1,9 @@
+[ERROR] 2026-07-27 09:26:48 - Password must be at least 4 characters long.
+[INFO] 2026-07-27 09:26:57 - User Registered | Username: aiman
+[WARNING] 2026-07-27 09:27:04 - Failed login attempt | Username: aiman
+[ERROR] 2026-07-27 09:27:04 - Invalid username or password.
+[INFO] 2026-07-27 09:27:11 - User Logged In | Username: aiman
+[ERROR] 2026-07-27 09:27:44 - Unknown coupon code: 1234
+[INFO] 2026-07-27 09:28:01 - Fare Calculated | Username: aiman, RideType: Economy, FinalFare: £12.75
+[INFO] 2026-07-27 09:28:01 - Ride Completed | Username: aiman, RideType: Economy, FinalFare: £12.75
+[INFO] 2026-07-27 09:28:23 - User Logged Out | Username: aiman

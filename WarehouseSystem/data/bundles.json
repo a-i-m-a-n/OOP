@@ -1,0 +1,11 @@
+[
+    {
+        "sku": "BUNDLE-GAMING01",
+        "name": "Gaming Bundle",
+        "items": [
+            { "sku": "KEYBOARD01", "quantity": 1 },
+            { "sku": "MOUSE01", "quantity": 1 },
+            { "sku": "HDMI01", "quantity": 2 }
+        ]
+    }
+]

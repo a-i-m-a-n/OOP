@@ -1,0 +1,12 @@
+[WARNING] 2026-07-28 15:08:57 - Failed login attempt | Username: qewe
+[ERROR] 2026-07-28 15:08:57 - Invalid username or password.
+[ERROR] 2026-07-28 15:09:08 - Password must be at least 4 characters long.
+[INFO] 2026-07-28 15:09:14 - User Registered | Username: aiman
+[INFO] 2026-07-28 15:09:22 - User Logged In | Username: aiman
+[ERROR] 2026-07-28 15:10:48 - Unknown product SKU: MOUSE0
+[INFO] 2026-07-28 15:11:02 - Order Created | OrderId: 1, Customer: Aiman
+[INFO] 2026-07-28 15:11:02 - Inventory Reserved | Sku: MOUSE01, Quantity: 2
+[ERROR] 2026-07-28 15:11:14 - Order #2 not found.
+[INFO] 2026-07-28 15:11:17 - Order Shipped | OrderId: 1
+[ERROR] 2026-07-28 15:11:27 - Order #1 cannot move from 'Shipped' to 'Cancelled'.
+[INFO] 2026-07-28 15:11:33 - User Logged Out | Username: aiman

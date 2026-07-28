@@ -1,0 +1,50 @@
+[
+    {
+        "sku": "KEYBOARD01",
+        "name": "Mechanical Keyboard",
+        "product_type": "physical",
+        "total_stock": 50,
+        "reserved_stock": 0,
+        "sold_stock": 0
+    },
+    {
+        "sku": "MOUSE01",
+        "name": "Wireless Mouse",
+        "product_type": "physical",
+        "total_stock": 75,
+        "reserved_stock": 0,
+        "sold_stock": 2
+    },
+    {
+        "sku": "HDMI01",
+        "name": "HDMI Cable (2m)",
+        "product_type": "physical",
+        "total_stock": 100,
+        "reserved_stock": 0,
+        "sold_stock": 0
+    },
+    {
+        "sku": "SWLICENSE01",
+        "name": "Productivity Suite License",
+        "product_type": "digital",
+        "total_stock": 0,
+        "reserved_stock": 0,
+        "sold_stock": 0
+    },
+    {
+        "sku": "GIFTCARD25",
+        "name": "\u00a325 Gift Card",
+        "product_type": "digital",
+        "total_stock": 0,
+        "reserved_stock": 0,
+        "sold_stock": 0
+    },
+    {
+        "sku": "CTRLR-LE01",
+        "name": "Collector's Edition Controller",
+        "product_type": "limited_edition",
+        "total_stock": 10,
+        "reserved_stock": 0,
+        "sold_stock": 0
+    }
+]

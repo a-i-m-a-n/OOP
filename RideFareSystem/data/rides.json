@@ -1,0 +1,28 @@
+[
+    {
+        "username": "aiman",
+        "ride_type": "Economy",
+        "distance_km": 3,
+        "duration_minutes": 24,
+        "booking_time": "09:27",
+        "airport_ride": false,
+        "coupon_code": null,
+        "fare_breakdown": {
+            "ride_type": "Economy",
+            "distance_km": 3,
+            "duration_minutes": 24,
+            "base_fare": 2.5,
+            "distance_cost": 2.4,
+            "duration_cost": 3.6,
+            "subtotal": 8.5,
+            "is_peak_hour": true,
+            "surge_amount": 4.25,
+            "airport_fee": 0,
+            "pre_discount_total": 12.75,
+            "coupon_code": null,
+            "discount": 0,
+            "final_fare": 12.75
+        },
+        "booked_at": "2026-07-27 09:28:01"
+    }
+]
