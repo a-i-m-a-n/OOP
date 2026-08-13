@@ -7,52 +7,75 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Laravel MVC Notes Application
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+A simple Laravel 13 Notes application built to understand and demonstrate **MVC architecture, routing, controllers, Eloquent ORM, migrations, Blade views, form validation, and SQLite database integration**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+> **Note:** The initial project structure and core configuration were generated using Laravel's built-in project scaffolding and libraries. The application-specific MVC functionality was implemented on top of this structure.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Create and display notes
+- SQLite database integration
+- Form validation
+- Automatic date and time tracking
+- MVC architecture
+- Eloquent ORM
+- Blade templating
+- CSRF protection
+- Success feedback after creating a note
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Tech Stack
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+| Technology | Purpose |
+|---|---|
+| PHP 8.4 | Backend programming language |
+| Laravel 13 | PHP web framework |
+| Composer | PHP dependency management |
+| SQLite | Database |
+| Eloquent ORM | Database interaction |
+| Blade | Server-side templating |
+| HTML/CSS | User interface |
+| Git/GitHub | Version control |
 
-## Agentic Development
+## MVC Flow
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+```mermaid
+flowchart TD
+    A[User] -->|GET /notes| B[Route<br/>routes/web.php]
+    B --> C[Controller<br/>NoteController.php]
+    C -->|Note::all / Note::create| D[Model<br/>Note.php]
+    D -->|Eloquent ORM| E[(SQLite Database<br/>database.sqlite)]
+    E -->|Data| D
+    D --> C
+    C -->|Pass data| F[Blade View<br/>notes.blade.php]
+    F --> G[User]
 
-```bash
-composer require laravel/boost --dev
+    H[Migration<br/>database/migrations] -->|Defines table structure| E
 
-php artisan boost:install
-```
+## Project Structure
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+```text
+mvc-demo/
+├── app/
+│   ├── Http/Controllers/       # Application controllers
+│   └── Models/                 # Eloquent models
+├── bootstrap/                  # Laravel application bootstrapping
+├── config/                     # Application configuration
+├── database/
+│   ├── migrations/             # Database structure
+│   └── database.sqlite         # SQLite database
+├── public/                     # Public entry point
+├── resources/
+│   └── views/                  # Blade views
+├── routes/
+│   └── web.php                 # Web routes
+├── storage/                    # Logs and generated files
+├── tests/                      # Application tests
+├── .env                        # Environment configuration
+├── artisan                     # Laravel CLI
+├── composer.json               # PHP dependencies
+├── package.json                # Frontend dependencies
+└── README.md
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
