@@ -28,16 +28,16 @@ A simple Laravel 13 Notes application built to understand and demonstrate **MVC 
 
 ## Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| PHP 8.4 | Backend programming language |
-| Laravel 13 | PHP web framework |
-| Composer | PHP dependency management |
-| SQLite | Database |
-| Eloquent ORM | Database interaction |
-| Blade | Server-side templating |
-| HTML/CSS | User interface |
-| Git/GitHub | Version control |
+| Technology     | Purpose                      |
+|----------------|-------------------------------|
+| PHP 8.4        | Backend programming language |
+| Laravel 13     | PHP web framework            |
+| Composer       | PHP dependency management    |
+| SQLite         | Database                     |
+| Eloquent ORM   | Database interaction         |
+| Blade          | Server-side templating       |
+| HTML/CSS       | User interface                |
+| Git/GitHub     | Version control               |
 
 ## MVC Flow
 
@@ -51,8 +51,8 @@ flowchart TD
     D --> C
     C -->|Pass data| F[Blade View<br/>notes.blade.php]
     F --> G[User]
-
     H[Migration<br/>database/migrations] -->|Defines table structure| E
+```
 
 ## Project Structure
 
@@ -78,4 +78,4 @@ mvc-demo/
 ├── composer.json               # PHP dependencies
 ├── package.json                # Frontend dependencies
 └── README.md
-
+```
